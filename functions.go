@@ -23,6 +23,16 @@ func MakeDistOrigin(o_x, o_y float64) func(float64, float64) float64 {
 	return fn
 }
 
+// Variable cantidad de argumentos
+func getMax(vals ...int) int {
+	maxV := -1
+	for _, v := range vals {
+		if v > maxV {
+			maxV = v
+		}
+	}
+	return maxV
+}
 func main() {
 
 	// Usando una función en una variable
@@ -47,4 +57,22 @@ func main() {
 	fmt.Println("Distancia de (2,2) al Origen 2 (2,2)")
 	fmt.Println(Dist2(2, 2))
 
+	// Variable cantidad de argumentos
+	fmt.Println(getMax(1, 3, 6, 4))
+
+	vslice := []int{1, 3, 6, 4}
+
+	fmt.Println(getMax(vslice...))
+
+	//Async functions (Deferred)
+
+	defer fmt.Println("Bye!")
+
+	fmt.Println("Hello")
+
+	// deferred Call arguments
+	i := 1
+	defer fmt.Println(i + 1)
+	i++
+	fmt.Println("Hello")
 }
