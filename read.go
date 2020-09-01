@@ -20,6 +20,7 @@ func main() {
 	fmt.Println("Enter name of file")
 	fmt.Scan(&filename)
 
+	// Archivo abierto
 	s := make([]Person, 0, 3)
 	file, err := os.Open(filename)
 	if err != nil {
@@ -27,6 +28,7 @@ func main() {
 	}
 	defer file.Close()
 
+	// Leyendo archivo
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
 		var cadena = scanner.Text()
@@ -35,6 +37,7 @@ func main() {
 
 		s = append(s, v)
 	}
+	// Imprimiendo archivo qué contiene un slice de estructuras.
 	fmt.Println(s)
 	for i := range s {
 		fmt.Println("Struct # ", i)

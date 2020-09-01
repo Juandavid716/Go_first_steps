@@ -10,6 +10,7 @@ import (
 
 func main() {
 
+	//Creación de slice
 	s := make([]int, 0, 3)
 	var cont int = 0
 
@@ -21,6 +22,7 @@ func main() {
 			fmt.Println("> exit:", input.Text())
 			break
 		} else {
+			// Agrega números a un slice
 			intVar, _ := strconv.Atoi(input.Text())
 			fmt.Println(len(s), cont)
 			if cont == len(s) {
@@ -32,6 +34,7 @@ func main() {
 				s[cont] = intVar
 
 			}
+			// Slice ordenado
 			sort.Ints(s)
 			fmt.Println(s)
 			cont = cont + 1

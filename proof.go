@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//Estructura golang
 type P struct {
 	x string
 	y int
@@ -19,6 +20,7 @@ func main() {
 	}
 	fmt.Println(b.x)
 
+	// Capacidad y longitud de un slice.
 	s := make([]int, 0, 3)
 	s = append(s, 100)
 	fmt.Println(len(s), cap(s))

@@ -11,6 +11,7 @@ func main() {
 	y := i * 2
 	fmt.Println(y)
 
+	// Reemplazar en la ni por in.
 	s := strings.Replace("ianianian", "ni", "in", 2)
 	fmt.Println(s)
 }
