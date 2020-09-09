@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	ellipse "github.com/Juandavid716/gohelloworld"
+	ellipse "github.com/Juandavid716/gophysics"
 )
 
 func main() {
