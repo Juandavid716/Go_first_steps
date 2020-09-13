@@ -1,7 +1,8 @@
 # Go first practices!
 
 Here there are some exercises in Go following the Coursera course: Getting Started with Go.
-
+* <a href="https://github.com/Juandavid716/Go_first_steps/blob/master/animal.go">animal.go </a> 
+>> exercise about animals using receiver types.
 * <a href="https://github.com/Juandavid716/Go_first_steps/blob/master/array.go">array.go </a> 
 >> declaration of arrays, for loops and slices.
 *<a href="https://github.com/Juandavid716/Go_first_steps/blob/master/bubble.go">bubble.go </a> 
@@ -20,6 +21,8 @@ Here there are some exercises in Go following the Coursera course: Getting Start
 >> reading a file named <a href="https://github.com/Juandavid716/Go_first_steps/blob/master/output.txt"> "output.txt" </a> and printing it throught a struct of slices.
 * <a href="https://github.com/Juandavid716/Go_first_steps/blob/master/read.go"> slice.go </a> 
 >> Numbers are added to a slice and then it is ordered
+* <a href="https://github.com/Juandavid716/Go_first_steps/blob/master/supportclass.go.go">supportclass.go </a> 
+>> Implementation of Receiver types
 * <a href="https://github.com/Juandavid716/Go_first_steps/blob/master/trunc.go"> trunc.go </a>
 >> Conversion from an Integer number to Float number.
 
